@@ -1,0 +1,95 @@
+# a标签的用法
+### `href` 
+
+* 跳转到外部页面
+```HTML
+<a href='//google.com'> google</a>
+```
+* 跳转到内部锚点
+```HTML
+<div id="x">123</div>
+<a href="#x"></a>
+```
+* 跳转到邮箱或电话
+```HTML
+<a href="mailto:xxxxxxxxxxxxx@163.com"></a>
+<!-- 跳转到邮箱 -->
+<a href="tell:xxxxxxxxxxx"></a>
+<!-- 跳转到电话 -->
+```
+### `target`
+* `_blank` ：在当前窗口打开页面，默认值。
+* `_self`：在新窗口打开页面。
+* `_top`：在顶层窗口打开页面。
+* `_parant`：在父窗口中打开页面。
+### `download`
+* 下载页面
+```HTML
+<a href="//google.com" download="google">google</a>
+```
+# img 标签的用法
+* 属性
+`src`：图片的链接。
+`alt`：图片加载失败时的说明。
+`width`&`height`：设置图片的宽高。
+* 事件
+`onload`
+`onerror`
+
+# table 标签的用法
+* 相关标签用法
+```HTML
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>小王</th>
+            <th>小明</th>
+            <th>小红</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>语文</th>
+            <td>80</td>
+            <td>90</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <th>数学</th>
+            <td>80</td>
+            <td>90</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <th>英语</th>
+            <td>80</td>
+            <td>90</td>
+            <td>95</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>总分</th>
+            <td>240</td>
+            <td>270</td>
+            <td>285</td>
+        </tr>
+    </tfoot>
+</table>
+```
+* 样式
+`table-layout`：`table-layout: auto`和`table-layout: fix`表格宽度布局算法。
+`border-collapse: collapse`：合并边框。
+`border-sapcing`：边框间距。
+
+# 感想
+了解了`<iframe>`属性，可以在页面中包含另一个页面。
+```HTML
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.baidu.com/">
+</iframe> 
+```
